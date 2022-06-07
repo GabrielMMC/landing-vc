@@ -1,0 +1,73 @@
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  backdrop-filter: blur(1rem);
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  padding: 1rem 1vw;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  transition: 500ms ease;
+}
+
+.nav-content a {
+  display: flex;
+}
+
+.nav-branch {
+  width: 8rem;
+  object-fit: contain;
+  margin: auto 0;
+}
+
+.nav-links {
+  display: flex;
+  /* gap: 0.6vw; */
+}
+
+.nav-links a {
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  transition: all 500ms ease, background-color 0ms ease;
+}
+
+.nav-links a:hover {
+  background-color: white;
+}
+
+.nav-links a:active {
+  position: relative;
+  top: 0.18rem;
+}
+
+.nav-links a:last-child {
+  margin-left: 1.2rem;
+}
+
+
+/* classe responsavel por encolher a navbar ao rolar o scroll */
+.shrink-navbar .nav-content {
+  padding: 2rem 2vw;
+}
+
+.shrink-navbar .nav-links a {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+}
+
+.shrink-navbar .nav-links a:last-child {
+  margin-left: 1rem;
+}

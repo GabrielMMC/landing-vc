@@ -1,0 +1,24 @@
+.header-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--montserrat);
+
+  padding: 8rem 0 2rem 0;
+}
+
+.header-section h1 {
+  margin: 2rem 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.header-section h5 {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.header-section img {
+  width: 100%;
+  object-fit: contain;
+}
